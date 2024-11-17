@@ -44,6 +44,7 @@ public class MovieController {
                 .setBaseResponseWithStatusAndCodeAndData(HttpStatus.OK.name(), StatusCodeEnum.SUCCESS_CODE.getCode(), movieService.addMovie(title, description, cast, releaseDate, trailers, photos,rating,duration,language,genre));
         return new ResponseEntity<>(buildSellerDetailsResponse,
                 HttpStatus.valueOf(buildSellerDetailsResponse.getStatus()));
+        //check
     }
 
 
